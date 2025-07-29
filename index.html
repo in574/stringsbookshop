@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Book Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #fdfdfd;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .hero a {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 30px;
+            background: #f4b400;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .category {
+            background: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .category img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .category h4 {
+            margin: 15px 0 10px;
+        }
+
+        .newsletter {
+            background: #f4f4f4;
+            padding: 40px 20px;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 12px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 12px 25px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #222;
+            color: #aaa;
+            padding: 20px 40px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f4b400;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            .categories {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter input[type="email"] {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .newsletter button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Strings Book Shop</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Next Favorite Book</h2>
+        <p>Explore a world of stories, knowledge, and imagination.</p>
+        <a href="#">Browse Now</a>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section">
+        <h3>Featured Categories</h3>
+        <div class="categories">
+            <div class="category">
+                <img src="https://source.unsplash.com/250x150/?fiction,books" alt="Fiction">
+                <h4>Fiction</h4>
+                <p>Discover compelling stories from modern and classic authors.</p>
+            </div>
+            <div class="category">
+                <img src="https://source.unsplash.com/250x150/?nonfiction,books" alt="Non-fiction">
+                <h4>Non-fiction</h4>
+                <p>Expand your mind with biographies, self-help, and more.</p>
+            </div>
+            <div class="category">
+                <img src="https://source.unsplash.com/250x150/?children,books" alt="Children">
+                <h4>Children's Books</h4>
+                <p>Whimsical tales and educational reads for young readers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+        <h3>Join Our Mailing List</h3>
+        <p>Be the first to hear about new arrivals and exclusive offers.</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Strings Book Shop. All rights reserved.</p>
+        <p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
